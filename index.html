@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafi Catering</title>
+    
+    <!-- Import Font: Poppins (Heading) dan Open Sans (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Ikon dari FontAwesome CDN untuk ikon sosmed dan UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+     
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGASI -->
+    <header>
+        <div class="container navbar">
+            <a href="#" class="logo">
+                <i class="fas fa-utensils"></i> Rafi Catering
+            </a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" onclick="closeMenu()">Beranda</a></li>
+                    <li><a href="#menu" onclick="closeMenu()">Menu</a></li>
+                    <li><a href="#about" onclick="closeMenu()">Tentang Kami</a></li>
+                    <li><a href="#contact" onclick="closeMenu()">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="container hero-content fade-in-section">
+            <h1>Rasakan Kelezatan Asli Rafi Catering</h1>
+            <p>Sajian istimewa dengan bahan baku segar pilihan dan resep warisan yang tak terlupakan. Solusi katering terbaik untuk setiap momen Anda.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Pesan Sekarang</a>
+                <a href="#menu" class="btn btn-outline">Lihat Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TENTANG KAMI -->
+    <section id="about" class="section-padding about">
+        <div class="container">
+            <div class="text-center section-title fade-in-section">
+                <h2>Tentang Kami</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-img img-zoom-container fade-in-section">
+                    <!-- Placeholder gambar chef/kitchen -->
+                    <img src="https://picsum.photos/seed/chefcooking/600/400.jpg" alt="Dapur Rafi Catering" class="img-zoom">
+                </div>
+                <div class="about-text fade-in-section">
+                    <h3>Dedikasi dalam Setiap Suapan</h3>
+                    <p>Rafi Catering berawal dari dapur kecil di tahun 2015 dengan mimpi sederhana: menghadirkan masakan rumahan dengan rasa restoran bintang lima. Kami percaya bahwa makanan enak berawal dari bahan yang jujur.</p>
+                    <p>Kami bekerja sama langsung dengan petani dan pemasok lokal untuk memastikan kesegaran setiap bumbu, sayuran, dan daging yang kami olah.</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>Bahan Baku Segar & Alami</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Dibuat dengan Penuh Cinta</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <span>Cita Rasa Otentik Nusantara</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU PRODUK -->
+    <section id="menu" class="section-padding">
+        <div class="container">
+            <div class="text-center section-title fade-in-section">
+                <h2>Menu Favorit</h2>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Menu Item 1 -->
+                <article class="menu-card fade-in-section">
+                    <div class="img-zoom-container">
+                        <img src="https://picsum.photos/seed/nasikotak/400/300.jpg" alt="Nasi Kotak Spesial" class="card-img img-zoom">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="menu-title">Nasi Kotak Spesial <span class="menu-price">Rp 35k</span></h3>
+                        <p class="menu-desc">Nasi putih pulen, ayam bakar madu, sambal goreng ati, lalapan, dan kerupuk udang.</p>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Rafi%20Catering,%20saya%20ingin%20pesan%20Nasi%20Kotak%20Spesial" target="_blank" class="btn btn-wa">
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Menu Item 2 -->
+                <article class="menu-card fade-in-section">
+                    <div class="img-zoom-container">
+                        <img src="https://picsum.photos/seed/tumpengmini/400/300.jpg" alt="Tumpeng Mini" class="card-img img-zoom">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="menu-title">Tumpeng Mini <span class="menu-price">Rp 45k</span></h3>
+                        <p class="menu-desc">Tumpeng nasi kuning cantik dengan 5 lauk pelengkap, cocok untuk syukuran.</p>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Rafi%20Catering,%20saya%20ingin%20pesan%20Tumpeng%20Mini" target="_blank" class="btn btn-wa">
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Menu Item 3 -->
+                <article class="menu-card fade-in-section">
+                    <div class="img-zoom-container">
+                        <img src="https://picsum.photos/seed/prasmanan/400/300.jpg" alt="Paket Prasmanan" class="card-img img-zoom">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="menu-title">Paket Prasmanan <span class="menu-price">Mulai Rp 85k/pax</span></h3>
+                        <p class="menu-desc">Menu lengkap prasmanan: appetizer, main course, dessert, dan minuman. Minimal 50 pax.</p>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Rafi%20Catering,%20saya%20ingin%20tanya%20Paket%20Prasmanan" target="_blank" class="btn btn-wa">
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Menu Item 4 -->
+                <article class="menu-card fade-in-section">
+                    <div class="img-zoom-container">
+                        <img src="https://picsum.photos/seed/snackbox/400/300.jpg" alt="Snack Box Premium" class="card-img img-zoom">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="menu-title">Snack Box Premium <span class="menu-price">Rp 20k</span></h3>
+                        <p class="menu-desc">3 kue manis/asin, air mineral gelas, dan tisue. Kemasan eksklusif dan higienis.</p>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Rafi%20Catering,%20saya%20ingin%20pesan%20Snack%20Box" target="_blank" class="btn btn-wa">
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                        </a>
+                    </div>
+                </article>
+
+                 <!-- Menu Item 5 -->
+                 <article class="menu-card fade-in-section">
+                    <div class="img-zoom-container">
+                        <img src="https://picsum.photos/seed/wedding/400/300.jpg" alt="Paket Pernikahan" class="card-img img-zoom">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="menu-title">Paket Pernikahan <span class="menu-price">Hubungi Kami</span></h3>
+                        <p class="menu-desc">Layanan katering pernikahan lengkap dengan dekorasi meja dan crew profesional.</p>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Rafi%20Catering,%20saya%20ingin%20konsultasi%20Paket%20Pernikahan" target="_blank" class="btn btn-wa">
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                        </a>
+                    </div>
+                </article>
+
+                 <!-- Menu Item 6 -->
+                 <article class="menu-card fade-in-section">
+                    <div class="img-zoom-container">
+                        <img src="https://picsum.photos/seed/esbuah/400/300.jpg" alt="Es Buah Segar" class="card-img img-zoom">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="menu-title">Es Buah Segar <span class="menu-price">Rp 15k</span></h3>
+                        <p class="menu-desc">Campuran buah segar musiman dengan sirup merah spesial dan susu kental manis.</p>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Rafi%20Catering,%20saya%20ingin%20pesan%20Es%20Buah" target="_blank" class="btn btn-wa">
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK & LOKASI -->
+    <section id="contact" class="section-padding contact">
+        <div class="container">
+            <div class="text-center section-title fade-in-section">
+                <h2>Hubungi Kami</h2>
+            </div>
+            
+            <div class="contact-container fade-in-section">
+                <!-- Info Kontak -->
+                <div class="contact-info">
+                    <h3>Informasi Pemesanan</h3>
+                    <p style="margin-bottom: 25px; color: #666;">Silakan hubungi kami untuk konsultasi menu, tes makanan (food test), atau pemesanan langsung.</p>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Perum Banjardowo Baru, Genuk, Semarang & Google Maps</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp (Fast Respon)</h4>
+                            <p>+62-895-403-578-022</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>rafficatringoffice@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Jam Operasional</h4>
+                            <p>Senin - Minggu: 08.00 - 17.00 WIB</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/62895403578022?" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://mailto:rafficatringoffice@gmail.com?" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed (Dummy location for demo) -->
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126907.08569628985!2d106.787344!3d-6.284200!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1ec2422b423%3A0x2cd044543e54c614!2sJakarta%20Selatan%2C%20South%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1689234567890!5m2!1sen!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>Rafi Catering</h2>
+                    <p>Melayani dengan sepenuh hati untuk setiap momen spesial Anda. Rasa berkualitas, harga bersahabat.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Link Cepat</h3>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#menu">Daftar Menu</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#contact">Lokasi & Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Sosial Media</h3>
+                    <p>Ikuti kami untuk promo menarik dan foto menu terbaru.</p>
+                    <div class="social-links" style="margin-top: 15px;">
+                        <a href="#" style="color: var(--secondary);"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: var(--secondary);"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Rafi Catering. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY WHATSAPP BUTTON -->
+    <a href="https://wa.me/62895403578022?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Rafi%20Catering" class="sticky-wa" target="_blank" title="Chat WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
