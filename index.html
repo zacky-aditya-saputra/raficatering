@@ -26,7 +26,13 @@
             <nav>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#home" onclick="closeMenu()">Beranda</a></li>
-                    <li><a href="#menu" onclick="closeMenu()">Menu</a></li>
+                    <li class="dropdown">
+                        <a href="#menu">Menu <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#menu" onclick="closeMenu()">Menu Favorit</a></li>
+                            <li><a href="#menu-lainnya" onclick="closeMenu()">Menu Lainnya</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#about" onclick="closeMenu()">Tentang Kami</a></li>
                     <li><a href="#contact" onclick="closeMenu()">Kontak</a></li>
                 </ul>
@@ -43,7 +49,8 @@
             <p>Sajian istimewa dengan bahan baku segar pilihan dan resep warisan yang tak terlupakan. Solusi catering
                 terbaik untuk setiap momen Anda.</p>
             <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">Pesan Sekarang</a>
+                <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20tertarik20%dengan20%"
+                    class="btn btn-primary">Pesan Sekarang</a>
                 <a href="#menu" class="btn btn-outline">Lihat Menu</a>
             </div>
         </div>
@@ -96,8 +103,8 @@
                     </div>
                     <div class="card-body">
                         <h3 class="menu-title">Nasi Ayam Bakar<span class="menu-price">17k</span></h3>
-                        <p class="menu-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo totam porro
-                            vero tempora consectetur aliquam!</p>
+                        <p class="menu-desc">Ayam bakar dengan bumbu rempah pilihan yang meresap hingga ke tulang,
+                            disajikan dengan nasi putih hangat, sambal, dan lalapan segar.</p>
                         <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20pesan%20Nasi%20Ayam%20Bakar"
                             target="_blank" class="btn btn-wa">
                             <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
@@ -111,8 +118,8 @@
                     </div>
                     <div class="card-body">
                         <h3 class="menu-title">Nasi Ayam Goreng<span class="menu-price">15k</span></h3>
-                        <p class="menu-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit soluta quae
-                            laudantium aperiam voluptatum? Eius?</p>
+                        <p class="menu-desc">Ayam goreng gurih dengan tekstur empuk di dalam dan garing di luar, lengkap
+                            dengan nasi putih dan pelengkapnya.</p>
                         <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20pesan%20Nasi%20Ayam%20Goreng"
                             target="_blank" class="btn btn-wa">
                             <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
@@ -125,8 +132,9 @@
                         <img src="./assets/ayam-goreng-kremes.jpg" alt="Nasi Ayam Kremes" class="card-img img-zoom">
                     </div>
                     <div class="card-body">
-                        <h3 class="menu-title">Nasi Ayam Kremes<span class="menu-price">16k</span></h3>
-                        <p class="menu-desc">Ayam goreng gurih dengan taburan kremesan renyah khas dapur kami.</p>
+                        <h3 class="menu-title">Nasi Ayam Goreng Kremes<span class="menu-price">16k</span></h3>
+                        <p class="menu-desc">Sajian ayam goreng renyah yang ditaburi kremesan gurih melimpah, memberikan
+                            sensasi kriuk yang nikmat.</p>
                         <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20pesan%20Nasi%20Ayam%20Goreng%20Kremes"
                             target="_blank" class="btn btn-wa">
                             <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
@@ -154,8 +162,8 @@
                     </div>
                     <div class="card-body">
                         <h3 class="menu-title">Nasi Ramesan<span class="menu-price">13k</span></h3>
-                        <p class="menu-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id culpa alias
-                            repellendus corporis omnis et!</p>
+                        <p class="menu-desc">Perpaduan nasi putih dengan aneka lauk pauk rumahan yang lengkap, lezat,
+                            dan mengenyangkan.</p>
                         <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20pesan%20Nasi%20Rames"
                             target="_blank" class="btn btn-wa">
                             <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
@@ -178,163 +186,234 @@
                 </article>
             </div>
 
-            <div class="text-center section-title fade-in-section" style="margin-top: 80px;">
-                <h2>Paket Hemat (Mulai Rp 13rb)</h2>
+            <div id="menu-lainnya" class="text-center section-title fade-in-section" style="margin-top: 100px;">
+                <h2>Menu lainnya</h2>
             </div>
             <div class="menu-grid">
                 <article class="menu-card fade-in-section">
                     <div class="img-zoom-container">
-                        <img src="./assets/ayam-bakar.jpg" alt="Paket Ayam Bakar" class="card-img img-zoom">
+                        <img src="./assets/chiken-katsu.jpg" alt="Risol Mayo" class="card-img img-zoom">
                     </div>
                     <div class="card-body">
-                        <h3 class="menu-title">Paket Ayam Bakar<span class="menu-price">Rp 13k</span></h3>
-                        <p class="menu-desc">Nasi Ayam Bakar, Sambal dan Lalap</p>
-                        <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20pesan%20Paket%20Sayur%20Padang%2013rb"
+                        <h3 class="menu-title">Chiken Katsu<span class="menu-price">12k</span></h3>
+                        <p class="menu-desc">Fillet ayam goreng tepung renyah ala Jepang yang disukai semua kalangan,
+                            disajikan dengan nasi.</p>
+                        <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20memesan%20Chiken%20katsu"
                             target="_blank" class="btn btn-wa">
-                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
                         </a>
                     </div>
                 </article>
 
                 <article class="menu-card fade-in-section">
                     <div class="img-zoom-container">
-                        <img src="./assets/sayur-padang.jpg" alt="Paket Sayur Padang" class="card-img img-zoom">
+                        <img src="./assets/nasi-kuning.jpg" alt="Pastel" class="card-img img-zoom">
                     </div>
                     <div class="card-body">
-                        <h3 class="menu-title">Paket Sayur Padang<span class="menu-price">Rp 13k</span></h3>
-                        <p class="menu-desc">Nasi sayur padang, telur dadar, krupuk dan sambal ijo.</p>
-                        <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20pesan%20Paket%20Nasi%20Rames%2013rb"
+                        <h3 class="menu-title">Nasi Kuning<span class="menu-price">12k</span></h3>
+                        <p class="menu-desc">Nasi gurih berwarna kuning aromatik, disajikan dengan lauk pauk khas
+                            seperti orek tempe dan telur.</p>
+                        <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20memesan%20Nasi%20kuning"
                             target="_blank" class="btn btn-wa">
-                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
                         </a>
                     </div>
                 </article>
 
                 <article class="menu-card fade-in-section">
                     <div class="img-zoom-container">
-                        <img src="./assets/ayam-goreng.jpg" alt="Paket Ayam Goreng"
-                            class="card-img img-zoom">
+                        <img src="./assets/nasi-ayam-tereaki.jpg" alt="Arem-arem" class="card-img img-zoom">
                     </div>
                     <div class="card-body">
-                        <h3 class="menu-title">Paket Ayam Goreng<span class="menu-price">13K</span></h3>
-                        <p class="menu-desc">Nasi ayam goreng, lalap dan sambal</p>
-                        <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20pesan%20Paket%20Nasi%20Rames%2013rb"
+                        <h3 class="menu-title">Nasi Ayam Tereaki<span class="menu-price">15k</span></h3>
+                        <p class="menu-desc">Daging ayam dengan saus teriyaki manis gurih yang meresap, disajikan di
+                            atas nasi putih hangat.</p>
+                        <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20memesan%20Nasi%20ayam%20tereaki"
                             target="_blank" class="btn btn-wa">
-                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
                         </a>
                     </div>
                 </article>
 
                 <article class="menu-card fade-in-section">
                     <div class="img-zoom-container">
-                        <img src="assets/paket-menu-makanan-wisata.png" alt="Paket Ayam Bakar"
-                            class="card-img img-zoom">
+                        <img src="./assets/nasi-telur-balado.jpg" alt="Lemper" class="card-img img-zoom">
                     </div>
                     <div class="card-body">
-                        <h3 class="menu-title">Paket Ayam Bakar<span class="menu-price">13K</span></h3>
-                        <p class="menu-desc">Nasi ayam bakar, lalap dan sambal</p>
-                        <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20pesan%20Paket%20Nasi%20Rames%2013rb"
+                        <h3 class="menu-title">Telur Balado<span class="menu-price">12k</span></h3>
+                        <p class="menu-desc">Telur rebus goreng dengan bumbu sambal balado merah merona yang pedas
+                            manis.</p>
+                        <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20memesan%20Nasi%20telur%20balado"
                             target="_blank" class="btn btn-wa">
-                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
                         </a>
                     </div>
                 </article>
 
                 <article class="menu-card fade-in-section">
                     <div class="img-zoom-container">
-                        <img src="assets/paket-menu-makanan-wisata.png" alt="Paket Nasi Orek-Bakmie"
-                            class="card-img img-zoom">
+                        <img src="./assets/nasi-ayam-chiken.jpg" alt="Sosis solo" class="card-img img-zoom">
                     </div>
                     <div class="card-body">
-                        <h3 class="menu-title">Paket Nasi Orek-Bakmie<span class="menu-price">13K</span></h3>
-                        <p class="menu-desc">Nasi orek tempe, bakmie, telur suwir, krupuk</p>
-                        <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20pesan%20Paket%20Nasi%20Rames%2013rb"
+                        <h3 class="menu-title">Nasi Ayam Chiken<span class="menu-price">12k</span></h3>
+                        <p class="menu-desc">Sajian praktis nasi dengan ayam goreng krispi yang gurih.</p>
+                        <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20memesan%20Nasi%20ayam%20chiken"
                             target="_blank" class="btn btn-wa">
-                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
                         </a>
                     </div>
                 </article>
 
                 <article class="menu-card fade-in-section">
                     <div class="img-zoom-container">
-                        <img src="assets/paket-menu-makanan-wisata.png" alt="Paket Ayam Crispy"
-                            class="card-img img-zoom">
+                        <img src="./assets/nasi-ayam-geprek.jpg" alt="Kue ku" class="card-img img-zoom">
                     </div>
                     <div class="card-body">
-                        <h3 class="menu-title">Paket Ayam Crispy<span class="menu-price">13K</span></h3>
-                        <p class="menu-desc">Ayam crispy, sambal dan lalap</p>
-                        <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20pesan%20Paket%20Nasi%20Rames%2013rb"
+                        <h3 class="menu-title">Nasi Ayam Geprek<span class="menu-price">11k</span></h3>
+                        <p class="menu-desc">Ayam krispi yang digeprek dengan sambal bawang pedas nampol, favorit
+                            pecinta pedas.</p>
+                        <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20memesan%20Nasi%20ayam%20geprek"
                             target="_blank" class="btn btn-wa">
-                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                        </a>
+                    </div>
+                </article>
+
+                <article class="menu-card fade-in-section">
+                    <div class="img-zoom-container">
+                        <img src="./assets/nasi-ayam-kecap.jpg" alt="Kue ku" class="card-img img-zoom">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="menu-title">Nasi Ayam Kecap<span class="menu-price">12k</span></h3>
+                        <p class="menu-desc">Potongan ayam yang dimasak dengan bumbu kecap manis gurih hingga meresap
+                            sempurna.</p>
+                        <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20memesan%20Nasi%20ayam%20kecap"
+                            target="_blank" class="btn btn-wa">
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                        </a>
+                    </div>
+                </article>
+
+                <article class="menu-card fade-in-section">
+                    <div class="img-zoom-container">
+                        <img src="./assets/nasi-goreng.jpg" alt="Kue ku" class="card-img img-zoom">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="menu-title">Nasi Goreng<span class="menu-price">13k</span></h3>
+                        <p class="menu-desc">Nasi goreng spesial khas Rafi Catering dengan bumbu rahasia yang pas di
+                            lidah.</p>
+                        <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20memesan%20Nasi%20goreng"
+                            target="_blank" class="btn btn-wa">
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                        </a>
+                    </div>
+                </article>
+
+                <article class="menu-card fade-in-section">
+                    <div class="img-zoom-container">
+                        <img src="./assets/orek-tempe.jpg" alt="Kue ku" class="card-img img-zoom">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="menu-title">Orek Tempe<span class="menu-price">10k</span></h3>
+                        <p class="menu-desc">Tempe potong kecil yang dimasak dengan bumbu manis pedas, cocok sebagai
+                            pelengkap menu.</p>
+                        <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20memesan%20Orek%20tempe"
+                            target="_blank" class="btn btn-wa">
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                        </a>
+                    </div>
+                </article>
+
+                <article class="menu-card fade-in-section">
+                    <div class="img-zoom-container">
+                        <img src="./assets/bakmie.jpg" alt="Kue ku" class="card-img img-zoom">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="menu-title">Bakmie<span class="menu-price">10k</span></h3>
+                        <p class="menu-desc">Mie goreng dengan bumbu gurih, campuran sayuran segar, dan potongan
+                            protein.</p>
+                        <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20memesan%20Bakmie"
+                            target="_blank" class="btn btn-wa">
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                        </a>
+                    </div>
+                </article>
+
+                <article class="menu-card fade-in-section">
+                    <div class="img-zoom-container">
+                        <img src="./assets/cap-cay.jpg" alt="Kue ku" class="card-img img-zoom">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="menu-title">Cap Cay<span class="menu-price">11k</span></h3>
+                        <p class="menu-desc">Tumisan aneka sayuran segar dengan kuah kental gurih yang menyehatkan.</p>
+                        <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20memesan%20Cap%20cay"
+                            target="_blank" class="btn btn-wa">
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                        </a>
+                    </div>
+                </article>
+
+
+                <article class="menu-card fade-in-section">
+                    <div class="img-zoom-container">
+                        <img src="./assets/ca-kangkung.jpg" alt="Kue ku" class="card-img img-zoom">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="menu-title">Ca Kangkung<span class="menu-price">10k</span></h3>
+                        <p class="menu-desc">Sayur kangkung tumis dengan bumbu bawang putih dan cabai yang segar.</p>
+                        <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20memesan%20Ca%20kangkung"
+                            target="_blank" class="btn btn-wa">
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                        </a>
+                    </div>
+                </article>
+
+                <article class="menu-card fade-in-section">
+                    <div class="img-zoom-container">
+                        <img src="./assets/kering-tempe.jpg" alt="Kue ku" class="card-img img-zoom">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="menu-title">Kering Tempe<span class="menu-price">10k</span></h3>
+                        <p class="menu-desc">Tempe goreng garing dengan balutan bumbu karamel manis pedas yang renyah.
+                        </p>
+                        <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20memesan%20Kering%20tempe"
+                            target="_blank" class="btn btn-wa">
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                        </a>
+                    </div>
+                </article>
+
+                <article class="menu-card fade-in-section">
+                    <div class="img-zoom-container">
+                        <img src="./assets/soto-ayam.jpg" alt="Kue ku" class="card-img img-zoom">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="menu-title">Soto Ayam<span class="menu-price">10k</span></h3>
+                        <p class="menu-desc">Soto dengan kuah kuning bening yang segar, lengkap dengan suwiran ayam,
+                            soun, dan tauge.</p>
+                        <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20memesan%20Soto%20ayam"
+                            target="_blank" class="btn btn-wa">
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                        </a>
+                    </div>
+                </article>
+
+                <article class="menu-card fade-in-section">
+                    <div class="img-zoom-container">
+                        <img src="./assets/soto-daging.jpg" alt="Kue ku" class="card-img img-zoom">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="menu-title">Soto Daging<span class="menu-price">16k</span></h3>
+                        <p class="menu-desc">Kuah kaldu sapi yang gurih mantap dengan potongan daging sapi yang empuk.
+                        </p>
+                        <a href="https://wa.me/62895403578022?text=Halo%20Rafi%20Catering,%20saya%20ingin%20memesan%20Soto%20daging"
+                            target="_blank" class="btn btn-wa">
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
                         </a>
                     </div>
                 </article>
             </div>
 
-            <div class="text-center section-title fade-in-section" style="margin-top: 80px;">
-                <h2>Aneka Snack (Mulai Rp 2rb)</h2>
-            </div>
-            <div class="menu-grid">
-                <article class="menu-card fade-in-section">
-                    <div class="img-zoom-container">
-                        <img src="assets/risol-mayo.jpg" alt="Risol Mayo" class="card-img img-zoom">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="menu-title">Risol Mayo<span class="menu-price">Rp 2rb</span></h3>
-                        <p class="menu-desc">Isian telur, smoked beef, dan saus mayo yang lumer di mulut.</p>
-                    </div>
-                </article>
-
-                <article class="menu-card fade-in-section">
-                    <div class="img-zoom-container">
-                        <img src="assets/pastel-renyah.jpg" alt="Pastel" class="card-img img-zoom">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="menu-title">Pastel<span class="menu-price">Rp 2rb</span></h3>
-                        <p class="menu-desc">Kulit garing dengan isian sayur dan telur pilihan yang lezat.</p>
-                    </div>
-                </article>
-
-                <article class="menu-card fade-in-section">
-                    <div class="img-zoom-container">
-                        <img src="assets/pastel-renyah.jpg" alt="Arem-arem" class="card-img img-zoom">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="menu-title">Arem-arem<span class="menu-price">Rp 2rb</span></h3>
-                        <p class="menu-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </article>
-
-                <article class="menu-card fade-in-section">
-                    <div class="img-zoom-container">
-                        <img src="assets/pastel-renyah.jpg" alt="Lemper" class="card-img img-zoom">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="menu-title">Lemper<span class="menu-price">Rp 2rb</span></h3>
-                        <p class="menu-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </article>
-
-                <article class="menu-card fade-in-section">
-                    <div class="img-zoom-container">
-                        <img src="assets/pastel-renyah.jpg" alt="Sosis solo" class="card-img img-zoom">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="menu-title">Sosis solo<span class="menu-price">Rp 2rb</span></h3>
-                        <p class="menu-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </article>
-
-                <article class="menu-card fade-in-section">
-                    <div class="img-zoom-container">
-                        <img src="assets/pastel-renyah.jpg" alt="Kue ku" class="card-img img-zoom">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="menu-title">Kue ku<span class="menu-price">Rp 2rb</span></h3>
-                        <p class="menu-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </article>
-            </div>
         </div>
     </section>
 
@@ -375,8 +454,10 @@
                     </div>
 
                     <div class="social-links">
-                        <a href="https://www.instagram.com/" target="_blank" class="social-icon" title="Instagram"><i
-                                class="fab fa-instagram"></i></a>
+                        <a href="https://maps.app.goo.gl/5yZwRFhB3HxT1FJi9" target="_blank" class="social-icon"
+                            title="Lokasi Kami">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </a>
                         <a href="https://wa.me/62895403578022" target="_blank" class="social-icon" title="WhatsApp"><i
                                 class="fab fa-whatsapp"></i></a>
                         <a href="mailto:rafficatringoffice@gmail.com" class="social-icon" title="Email"><i
@@ -385,7 +466,10 @@
                 </div>
 
                 <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.334930587638!2d110.490442!3d-6.969756099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70f2cc61c934fd%3A0xf91a80b5e38534df!2sPerum%20banjardowo%20baru%20Jl.%20Teratai%20No.C-4256%2C%20Banjardowo%2C%20Kec.%20Genuk%2C%20Kota%20Semarang%2C%20Jawa%20Tengah%2050117!5e0!3m2!1sid!2sid!4v1767969681902!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.334930587638!2d110.490442!3d-6.969756099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70f2cc61c934fd%3A0xf91a80b5e38534df!2sPerum%20banjardowo%20baru%20Jl.%20Teratai%20No.C-4256%2C%20Banjardowo%2C%20Kec.%20Genuk%2C%20Kota%20Semarang%2C%20Jawa%20Tengah%2050117!5e0!3m2!1sid!2sid!4v1767969681902!5m2!1sid!2sid"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -417,7 +501,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2023 Rafi Catering. All Rights Reserved.</p>
+                <p>© 2026 Rafi Catering. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
