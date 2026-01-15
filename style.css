@@ -217,7 +217,7 @@
    /* --- HERO SECTION --- */
    .hero {
        height: 100vh;
-       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/seed/foodcatering/1920/1080.jpg');
+       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/prasmanan.jpg');
        background-size: cover;
        background-position: center;
        background-attachment: fixed;
@@ -289,6 +289,10 @@
    }
 
    /* --- MENU --- */
+   #menu-lainnya {
+    margin-top: 80px;
+   }
+
    .menu-grid {
        display: grid;
        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
